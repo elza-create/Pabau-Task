@@ -48,6 +48,11 @@ function App() {
     setStep(step + 1);
   };
 
+  const handleBack = () => {
+    setSelectedOption("");
+    setStep(step - 1);
+  };
+
   return (
     <div>
       <header>
@@ -59,6 +64,7 @@ function App() {
       <RenderContent
         selectedOption={selectedOption}
         options={options}
+        handleBack={handleBack}
         handleOptionSelect={handleOptionSelect}
       />
     </div>
