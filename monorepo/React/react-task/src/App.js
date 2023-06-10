@@ -12,6 +12,7 @@ import "./App.css";
 function App() {
   const [step, setStep] = useState(1);
   const [selectedOption, setSelectedOption] = useState("");
+
   const options = [
     {
       option: "Anti Wrinkle Treatment",
@@ -56,17 +57,20 @@ function App() {
   return (
     <div>
       <header>
-        <p>Choose Service</p>
-        <p>
+        <p className="header-text">Choose Service</p>
+        <p className="header-paragraph">
           Step {step}/{step}
         </p>
       </header>
-      <RenderContent
-        selectedOption={selectedOption}
-        options={options}
-        handleBack={handleBack}
-        handleOptionSelect={handleOptionSelect}
-      />
+      <div>
+        <RenderContent
+          selectedOption={selectedOption}
+          options={options}
+          handleBack={handleBack}
+          handleOptionSelect={handleOptionSelect}
+        />
+      </div>
+      <footer>Powered By Pabau</footer>
     </div>
   );
 }

@@ -1,8 +1,9 @@
 import Option from "./Option";
+
 const OptionsList = ({ options, handleOptionSelect }) => {
   return (
-    <div>
-      <div>
+    <div className="container">
+      <div className="inner-container">
         {options.map((optionObj, index) => (
           <Option
             key={index}
@@ -11,11 +12,10 @@ const OptionsList = ({ options, handleOptionSelect }) => {
           />
         ))}
       </div>
-      <div>
-        <p>
-          {" "}
+      <div className="gap-div">
+        <p className="gap-div-text">
           Not sure about the consultation type? Please call{" "}
-          <span>0203 7959063</span>
+          <span className="number">0203 7959063</span>
         </p>
       </div>
     </div>

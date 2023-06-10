@@ -3,8 +3,8 @@ import SelectedOption from "./SelectedOption";
 const RenderContent = ({
   selectedOption,
   options,
-  handleOptionSelect,
   handleBack,
+  handleOptionSelect,
 }) => {
   if (selectedOption === "") {
     return (

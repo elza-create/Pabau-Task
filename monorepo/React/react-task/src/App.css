@@ -1,1 +1,140 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.header-text {
+  margin-bottom: 0.5px;
+  font-weight: bold;
+  color: black;
+}
+
+.header-paragraph {
+  margin-top: 0.5px;
+  font-weight: bold;
+  color: #7c7b7b;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: calc(100vh - 18rem);
+  padding: 1.25rem;
+  background-color: #efeeee;
+}
+
+.inner-container {
+  padding: 1.875rem;
+  width: 40%;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.25rem;
+}
+
+.option-button {
+  display: block;
+  width: 100%;
+  height: 3rem;
+
+  border: 1px solid #ede6e6;
+  border-radius: 5px;
+  background-color: #fff;
+
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.option-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  height: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.option-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.option-name {
+  font-size: 1rem;
+  color: #8d8989;
+  font-weight: 600;
+}
+.option-arrow svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  align-items: center;
+  color: #848282;
+}
+
+.selected-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected-option-image {
+  width: 30%;
+  height: 30%;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.selected-option-name {
+  color: #6a6767;
+  font-size: 3rem;
+}
+
+.back-button {
+  padding: 8px 1rem;
+  background-color: #ede6e6;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.back-button:hover {
+  background-color: #ccc;
+}
+
+.gap-div {
+  width: 43%;
+  padding: 7px;
+  border: 1px solid #ede6e6;
+
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.gap-div-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #737171;
+}
+
+.number {
+  color: rgb(69, 69, 240);
+}
+
+footer {
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+  color: #6b6969;
+}
