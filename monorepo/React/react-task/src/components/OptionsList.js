@@ -1,5 +1,5 @@
-const OptionsList = () => {
-  return <div>OptionsList</div>;
+const OptionsList = ({ options }) => {
+  return <div>{options}</div>;
 };
 
 export default OptionsList;
