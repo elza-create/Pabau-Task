@@ -1,4 +1,4 @@
-const SelectedOption = () => {
+const SelectedOption = ({ options, SelectedOption }) => {
   return <div>SelectedOption</div>;
 };
 
