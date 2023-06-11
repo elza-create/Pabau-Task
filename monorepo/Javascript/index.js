@@ -1,6 +1,8 @@
 const form = document.getElementById("checkboxForm");
 const shuffleBtn = document.getElementById("shuffleBtn");
 const changeBtn = document.getElementById("changeBtn");
+const showSelectedBtn = document.getElementById("showSelectedBtn");
+const selectedValuesDiv = document.getElementById("selectedValues");
 
 function shuffleValues() {
   const checkboxes = Array.from(
@@ -20,5 +22,15 @@ function changeValues() {
   });
 }
 
+function showSelectedValues() {
+  const checkboxes = form.querySelectorAll('input[type="checkbox"]:checked');
+  const selectedValues = Array.from(checkboxes).map(
+    (checkbox) => checkbox.value
+  );
+  selectedValuesDiv.textContent =
+    "Selected Values: " + selectedValues.join(", ");
+}
+
 shuffleBtn.addEventListener("click", shuffleValues);
 changeBtn.addEventListener("click", changeValues);
+showSelectedBtn.addEventListener("click", showSelectedValues);
