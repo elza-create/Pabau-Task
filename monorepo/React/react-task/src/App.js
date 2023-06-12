@@ -58,9 +58,7 @@ function App() {
     <div>
       <header>
         <p className="header-text">Choose Service</p>
-        <p className="header-paragraph">
-          Step {step}/{step}
-        </p>
+        <p className="header-paragraph">Step {`${step}/2`}</p>
       </header>
       <div>
         <RenderContent
